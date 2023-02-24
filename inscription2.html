@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="...."/>
+	<!--bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>Inscription - North Health</title>
+</head>
+
+<body>
+	<h1>Inscription</h1>
+	<h2>Informations médicales</h2>
+
+	<form>
+		<label for="numero_secu">Numéro de sécurité sociale:</label><br>
+		<input type="text" id="numero_secu" name="numero_secu" required><br><br>
+
+		<label for="regime">Régime d'assurance maladie:</label><br>
+		<select id="regime" name="regime" required>
+			<option value="" selected>Sélectionnez un régime</option>
+			<option value="regime_general">Régime général</option>
+			<option value="regime_agricole">Régime agricole</option>
+			<option value="regime_special">Régime spécial</option>
+		</select><br><br>
+	
+		<label for="mutuelle">Mutuelle:</label><br>
+		<input type="text" id="mutuelle" name="mutuelle" required><br><br>
+
+		<label for="nom_medecin">Nom du médecin traitant:</label><br>
+		<input type="text" id="nom_medecin" name="nom_medecin"><br><br>
+	
+		<button type="button" onclick="window.history.back()">Précédent</button></a>
+		<a href="..\North Health - web\inscription-reussie.html"><button type="button">Suivant</button></a>
+
+	</form>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

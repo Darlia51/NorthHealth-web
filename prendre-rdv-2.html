@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css"/>
+	<!--bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>Prendre un rendez-vous - North Health</title>
+</head>
+
+
+<body>
+	<header>
+		<!--MENU DE NAVIGATION-->
+		<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+			<div class="container-fluid" style="justify-content:end;">
+				<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link active" href="..\North Health - web\accueil-connecte.html">Accueil</a></li>
+						<li class="nav-item"><a class="nav-link" href="..\North Health - web\prendre-rdv-1.html">Prendre RDV</a></li>
+						<li class="nav-item"><a class="nav-link" href="..\North Health - web\dossier-patient.html">Dossier patient</a></li>
+						<li class="nav-item"><a class="nav-link" href="..\North Health - web\prescriptions-ordonnances.html">Prescriptions et ordonnances</a></li>
+						<li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modaleDeconnexion">Déconnexion
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+												<path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+										</svg>
+							</a>
+						</li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<!--MODALE DECONNEXION-->
+		<div class="modal fade" id="modaleDeconnexion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Déconnexion</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Êtes-vous sûr(e) de vouloir vous déconnecter ?
+					</div>
+					<div class="modal-footer">
+						<a href="..\North Health - web\accueil-site.html" class="btn btn-primary">Oui</a>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Non</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<main>
+		<h1>Prendre rendez-vous</h1>
+		<!--NUMEROTATION -->
+		<div class="numerotations-etapes">
+			<div class="numerotation-etape">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+					<path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+				</svg>
+				<h2>Type d'intervention</h2>
+			</div>
+	
+			<div class="numerotation-etape">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+					<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+				</svg>
+				<h2>Établissement</h2>
+			</div>
+	
+			<div class="numerotation-etape">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-circle" viewBox="0 0 16 16">
+					<path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+					<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+				</svg>
+				<h2>Date et heure</h2>
+			</div>
+	
+			<div class="numerotation-etape">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-4-circle" viewBox="0 0 16 16">
+					<path d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"/>
+					<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+				</svg>
+				<h2>Infos complémentaires</h2>
+			</div>
+		</div>
+
+		
+		<!--FORMULAIRE-->
+		<div class="groupe-etablissement">
+			<div>
+				<h3 class="h3-prise-rdv">Votre ville</h3>
+				<div style="border:1px solid; width:350px; height:270px;"></div>
+			</div>
+
+			<div>
+				<form>
+					<div class="form-etablissement">
+						<label for="selectEtablissement" class="label-prise-rdv pb-3">Établissements</label>
+						<select class="form-control" id="selectEtablissement" required>
+							<option value="">Choisissez un établissement</option>
+							<option value="clinique1">Clinique 1</option>
+							<option value="hopital2">Hopital 2</option>
+						</select>
+						<div class="invalid-feedback">Veuillez sélectionner un docteur.</div>
+					</div>
+				</form>
+
+				<form>
+					<div class="form-group">
+						<label for="selectDr" class="label-prise-rdv pb-3">Spécialistes disponibles :</label>
+						<select class="form-control" id="selectDr" required>
+							<option value="">Choisissez un spécialiste</option>
+							<option value="dr_dupont_andre">Dr DUPONT André</option>
+							<option value="dr_lavie_marie">Dr LAVIE Marie</option>
+							<option value="dr_martin_henri">Dr MARTIN Henri</option>
+						</select>
+						<div class="invalid-feedback">Veuillez sélectionner un docteur.</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+		
+		<footer class="fixed-bottom d-flex justify-content-between align-items-center px-5 pb-4">
+			<button type="button" onclick="window.history.back()">Précédent</button></a>
+			<a href="..\North Health - web\prendre-rdv-3.html"><button type="button">Suivant</button></a>
+		</footer>
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
